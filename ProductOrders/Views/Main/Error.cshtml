@@ -1,0 +1,19 @@
+﻿@model IEnumerable<ProductOrders.Models.Error>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ErrorMessage)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ErrorMessage)
+        </td>
+    </tr>
+}
+
+</table>
